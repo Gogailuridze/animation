@@ -1,0 +1,67 @@
+body {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f43b47), to(#453a94));
+    background-image: -o-linear-gradient(bottom, #f43b47 0%, #453a94 100%);
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    overflow-y: hidden;
+}
+.night{
+    width: 70%;
+    height: 75vh;
+    margin: 100px auto;
+    background-image: url(../images/pexels-pixabay-36717.jpg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow-x: hidden;
+    position: relative;
+}
+.surface {
+    width: 500%;
+    height: 80px;
+    background-image: -o-linear-gradient(45deg, #392b3f 0%, #9c2c24 100%);
+    background-image: linear-gradient(45deg, #392b3f 0%, #9c2c24 100%);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+}
+.car img{
+    width: 200px;
+    height: 150px;
+    -webkit-animation: suspension 1s linear infinite;
+            animation: suspension 1s linear infinite;
+}
+.car {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    -webkit-animation: moveright 6s linear infinite;
+            animation: moveright 6s linear infinite;
+}
+@-webkit-keyframes moveright {
+    0%{left: 10%; bottom: 5%;}
+    25%{left: 30%; bottom: 5%;}
+    50%{left: 45%; bottom: 5%;}
+    75%{left: 60%; bottom: 5%;}
+    100%{left: 75%; bottom: 5%;}
+}
+@keyframes moveright {
+    0%{left: 10%; bottom: 5%;}
+    25%{left: 30%; bottom: 5%;}
+    50%{left: 45%; bottom: 5%;}
+    75%{left: 60%; bottom: 5%;}
+    100%{left: 75%; bottom: 5%;}
+}
+@-webkit-keyframes suspension {
+    100%{-webkit-transform: translateY(-1px);transform: translateY(-1px);}
+    50%{-webkit-transform: translateY(5px);transform: translateY(5px);}
+    0%{-webkit-transform: translateY(-1px);transform: translateY(-1px);}   
+}
+@keyframes suspension {
+    100%{-webkit-transform: translateY(-1px);transform: translateY(-1px);}
+    50%{-webkit-transform: translateY(5px);transform: translateY(5px);}
+    0%{-webkit-transform: translateY(-1px);transform: translateY(-1px);}   
+}
